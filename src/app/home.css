@@ -1,0 +1,46 @@
+@media screen and (max-width: 1920px) {
+  .emblems {
+    width: auto;
+    height: 64px;
+  }
+
+  .background {
+    left: 50%; 
+    bottom: 0; 
+    transform: translateX(-50%); 
+    width: 100%; 
+    height: auto;
+  }
+
+  .building1 {
+    left: 50%; 
+    bottom: 10%;
+    transform: translateX(-50%);
+    width: 100%; 
+    height: auto;
+  }
+
+  .building2 {
+    left: 50%; 
+    bottom: 0%;
+    transform: translateX(-50%);
+    width: 100%; 
+    height: auto;
+  }
+
+  .cloud {
+    left: 50%; 
+    bottom: -2%;
+    transform: translateX(-50%);
+    width: 90%; 
+    height: auto;
+  }
+
+  .rector-main {
+    left: 50%;
+    bottom: -5%;
+    width: 90%;
+    height: auto;
+    transform: translateX(-50%);
+  }
+}
