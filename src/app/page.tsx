@@ -29,7 +29,7 @@ export default function Home() {
       <main className="relative flex-2 overflow-hidden">
         <Image src="/home/background.webp" alt="Background" width={1439} height={1104} priority className="absolute background z-0" />
         <Image src="/home/rector-main.webp" alt="Rector Background" width={2299} height={1168} className="absolute rector-main z-5" />
-        <Image src="/home/cloud.webp" alt="Cloud" width={3587} height={724} priority className="absolute cloud opacity-80 z-10" />
+        <Image src="/home/cloud.webp" alt="Cloud" width={3587} height={724} priority className="absolute cloud opacity-85 z-10" />
         <Image src="/home/building1.webp" alt="Building1" width={2982} height={893}  className="absolute building1 z-3" />
         <Image src="/home/building2.webp" alt="Building2" width={2888} height={851} className="absolute building2 z-4" />
       </main>
