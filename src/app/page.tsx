@@ -5,8 +5,8 @@ export default function Home() {
   return (
     <div className="flex min-h-screen flex-col">
       <nav className="w-full bg-[#392843]">
-        <div className="flex h-20 w-full items-center justify-between px-12">
-          <div className="flex items-center gap-6">
+        <div className="flex h-20 w-full items-center justify-between px-4 sm:px-12">
+          <div className="flex shrink-0 items-center gap-3 sm:gap-6">
             <a href="#" className="flex items-center">
               <Image src="/home/emblem-rektor.webp" width={540} height={588} alt="Rektor Logo" className="emblems" />
             </a>
@@ -19,7 +19,7 @@ export default function Home() {
               <Image src="/home/emblem-uc.webp" alt="UC Logo" width={540} height={540} className="emblems" />
             </a>
           </div>
-          <div className="flex items-center gap-10 text-lg text-white">
+          <div className="flex items-center gap-5 text-base text-white sm:gap-10 sm:text-lg">
             <a href="">Home</a>
             <a href="">Countdown</a>
           </div>

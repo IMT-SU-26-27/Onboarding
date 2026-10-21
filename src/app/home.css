@@ -1,46 +1,1090 @@
-@media screen and (max-width: 1920px) {
+/* Base layout = the 1920x1080 design. The media queries below only override
+   size/offset; order matters (later, smaller queries win). */
+.emblems {
+  width: auto;
+  height: 64px;
+}
+
+.background {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.building1,
+.building2,
+.cloud,
+.rector-main {
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: none;
+  height: auto;
+}
+
+.building1 {
+  bottom: 10%;
+  width: 100%;
+}
+
+.building2 {
+  bottom: 0%;
+  width: 100%;
+}
+
+.cloud {
+  bottom: -2%;
+  width: 90%;
+}
+
+.rector-main {
+  bottom: -5%;
+  width: 90%;
+  /* safety net for in-between viewports: shrink instead of hitting the nav */
+  max-height: 100%;
+  object-fit: contain;
+  object-position: bottom;
+}
+
+@media (max-width: 3840px) and (max-height: 2160px) {
   .emblems {
-    width: auto;
     height: 64px;
   }
 
-  .background {
-    left: 50%; 
-    bottom: 0; 
-    transform: translateX(-50%); 
-    width: 100%; 
-    height: auto;
-  }
-
   .building1 {
-    left: 50%; 
     bottom: 10%;
-    transform: translateX(-50%);
-    width: 100%; 
-    height: auto;
+    width: 104%;
   }
 
   .building2 {
-    left: 50%; 
     bottom: 0%;
-    transform: translateX(-50%);
-    width: 100%; 
-    height: auto;
+    width: 104%;
   }
 
   .cloud {
-    left: 50%; 
     bottom: -2%;
-    transform: translateX(-50%);
-    width: 90%; 
-    height: auto;
+    width: 94%;
   }
 
   .rector-main {
-    left: 50%;
     bottom: -5%;
-    width: 90%;
-    height: auto;
-    transform: translateX(-50%);
+    width: 94%;
   }
 }
+
+@media (max-width: 2850px) and (max-height: 1800px) {
+  .emblems {
+    height: 64px;
+  }
+
+  .building1 {
+    bottom: 10%;
+    width: 116%;
+  }
+
+  .building2 {
+    bottom: 0%;
+    width: 116%;
+  }
+
+  .cloud {
+    bottom: -2%;
+    width: 104%;
+  }
+
+  .rector-main {
+    bottom: -5%;
+    width: 104%;
+  }
+}
+
+@media (max-width: 2560px) and (max-height: 1600px) {
+  .emblems {
+    height: 64px;
+  }
+
+  .building1 {
+    bottom: 10%;
+    width: 114%;
+  }
+
+  .building2 {
+    bottom: 0%;
+    width: 114%;
+  }
+
+  .cloud {
+    bottom: -2%;
+    width: 103%;
+  }
+
+  .rector-main {
+    bottom: -5%;
+    width: 103%;
+  }
+}
+
+@media (max-width: 2560px) and (max-height: 1352px) {
+  .emblems {
+    height: 64px;
+  }
+
+  .building1 {
+    bottom: 7%;
+    width: 100%;
+  }
+
+  .building2 {
+    bottom: -3%;
+    width: 100%;
+  }
+
+  .cloud {
+    bottom: -2%;
+    width: 86%;
+  }
+
+  .rector-main {
+    bottom: -5%;
+    width: 86%;
+  }
+}
+
+@media (max-width: 2560px) and (max-height: 1140px) {
+  .emblems {
+    height: 64px;
+  }
+
+  .building1 {
+    bottom: -5%;
+    width: 100%;
+  }
+
+  .building2 {
+    bottom: -15%;
+    width: 100%;
+  }
+
+  .cloud {
+    bottom: -2%;
+    width: 72%;
+  }
+
+  .rector-main {
+    bottom: -5%;
+    width: 72%;
+  }
+}
+
+@media (max-width: 1920px) and (max-height: 1080px) {
+  .emblems {
+    height: 64px;
+  }
+
+  .building1 {
+    bottom: 10%;
+    width: 100%;
+  }
+
+  .building2 {
+    bottom: 0%;
+    width: 100%;
+  }
+
+  .cloud {
+    bottom: -2%;
+    width: 90%;
+  }
+
+  .rector-main {
+    bottom: -5%;
+    width: 90%;
+  }
+}
+
+@media (max-width: 1900px) and (max-height: 1920px) and (orientation: portrait) {
+  .emblems {
+    height: 64px;
+  }
+
+  .building1 {
+    bottom: 10%;
+    width: 186%;
+  }
+
+  .building2 {
+    bottom: 0%;
+    width: 186%;
+  }
+
+  .cloud {
+    bottom: -2%;
+    width: 167%;
+  }
+
+  .rector-main {
+    bottom: -5%;
+    width: 167%;
+  }
+}
+
+@media (max-width: 1900px) and (max-height: 1200px) {
+  .emblems {
+    height: 64px;
+  }
+
+  .building1 {
+    bottom: 10%;
+    width: 113%;
+  }
+
+  .building2 {
+    bottom: 0%;
+    width: 113%;
+  }
+
+  .cloud {
+    bottom: -2%;
+    width: 102%;
+  }
+
+  .rector-main {
+    bottom: -5%;
+    width: 102%;
+  }
+}
+
+@media (max-width: 1728px) and (max-height: 1117px) {
+  .emblems {
+    height: 64px;
+  }
+
+  .building1 {
+    bottom: 10%;
+    width: 115%;
+  }
+
+  .building2 {
+    bottom: 0%;
+    width: 115%;
+  }
+
+  .cloud {
+    bottom: -2%;
+    width: 104%;
+  }
+
+  .rector-main {
+    bottom: -5%;
+    width: 104%;
+  }
+}
+
+@media (max-width: 1538px) and (max-height: 2048px) and (orientation: portrait) {
+  .emblems {
+    height: 64px;
+  }
+
+  .building1 {
+    bottom: 10%;
+    width: 230%;
+  }
+
+  .building2 {
+    bottom: 0%;
+    width: 230%;
+  }
+
+  .cloud {
+    bottom: -2%;
+    width: 200%;
+  }
+
+  .rector-main {
+    bottom: -5%;
+    width: 200%;
+  }
+}
+
+@media (max-width: 1528px) and (max-height: 732px) {
+  .emblems {
+    height: 64px;
+  }
+
+  .building1 {
+    bottom: -3%;
+    width: 100%;
+  }
+
+  .building2 {
+    bottom: -13%;
+    width: 100%;
+  }
+
+  .cloud {
+    bottom: -2%;
+    width: 74%;
+  }
+
+  .rector-main {
+    bottom: -5%;
+    width: 74%;
+  }
+}
+
+@media (max-width: 1512px) and (max-height: 982px) {
+  .emblems {
+    height: 64px;
+  }
+
+  .building1 {
+    bottom: 10%;
+    width: 115%;
+  }
+
+  .building2 {
+    bottom: 0%;
+    width: 115%;
+  }
+
+  .cloud {
+    bottom: -2%;
+    width: 103%;
+  }
+
+  .rector-main {
+    bottom: -5%;
+    width: 103%;
+  }
+}
+
+@media (max-width: 1440px) and (max-height: 641px) {
+  .emblems {
+    height: 64px;
+  }
+
+  .building1 {
+    bottom: -9%;
+    width: 100%;
+  }
+
+  .building2 {
+    bottom: -19%;
+    width: 100%;
+  }
+
+  .cloud {
+    bottom: -2%;
+    width: 67%;
+  }
+
+  .rector-main {
+    bottom: -5%;
+    width: 67%;
+  }
+}
+
+@media (max-width: 1366px) and (max-height: 1024px) {
+  .emblems {
+    height: 64px;
+  }
+
+  .building1 {
+    bottom: 10%;
+    width: 133%;
+  }
+
+  .building2 {
+    bottom: 0%;
+    width: 133%;
+  }
+
+  .cloud {
+    bottom: -2%;
+    width: 119%;
+  }
+
+  .rector-main {
+    bottom: -5%;
+    width: 119%;
+  }
+}
+
+@media (max-width: 1366px) and (max-height: 768px) {
+  .emblems {
+    height: 64px;
+  }
+
+  .building1 {
+    bottom: 8%;
+    width: 100%;
+  }
+
+  .building2 {
+    bottom: -2%;
+    width: 100%;
+  }
+
+  .cloud {
+    bottom: -2%;
+    width: 87%;
+  }
+
+  .rector-main {
+    bottom: -5%;
+    width: 87%;
+  }
+}
+
+@media (max-width: 1333px) and (max-height: 632px) {
+  .emblems {
+    height: 64px;
+  }
+
+  .building1 {
+    bottom: -5%;
+    width: 100%;
+  }
+
+  .building2 {
+    bottom: -15%;
+    width: 100%;
+  }
+
+  .cloud {
+    bottom: -2%;
+    width: 72%;
+  }
+
+  .rector-main {
+    bottom: -5%;
+    width: 72%;
+  }
+}
+
+@media (max-width: 1280px) and (max-height: 853px) {
+  .emblems {
+    height: 64px;
+  }
+
+  .building1 {
+    bottom: 10%;
+    width: 116%;
+  }
+
+  .building2 {
+    bottom: 0%;
+    width: 116%;
+  }
+
+  .cloud {
+    bottom: -2%;
+    width: 104%;
+  }
+
+  .rector-main {
+    bottom: -5%;
+    width: 104%;
+  }
+}
+
+@media (max-width: 1180px) and (max-height: 820px) {
+  .emblems {
+    height: 64px;
+  }
+
+  .building1 {
+    bottom: 10%;
+    width: 120%;
+  }
+
+  .building2 {
+    bottom: 0%;
+    width: 120%;
+  }
+
+  .cloud {
+    bottom: -2%;
+    width: 108%;
+  }
+
+  .rector-main {
+    bottom: -5%;
+    width: 108%;
+  }
+}
+
+@media (max-width: 1024px) and (max-height: 1366px) and (orientation: portrait) {
+  .emblems {
+    height: 64px;
+  }
+
+  .building1 {
+    bottom: 10%;
+    width: 230%;
+  }
+
+  .building2 {
+    bottom: 0%;
+    width: 230%;
+  }
+
+  .cloud {
+    bottom: -2%;
+    width: 200%;
+  }
+
+  .rector-main {
+    bottom: -5%;
+    width: 200%;
+  }
+}
+
+@media (max-width: 1024px) and (max-height: 768px) and (orientation: landscape) {
+  .emblems {
+    height: 64px;
+  }
+
+  .building1 {
+    bottom: 10%;
+    width: 129%;
+  }
+
+  .building2 {
+    bottom: 0%;
+    width: 129%;
+  }
+
+  .cloud {
+    bottom: -2%;
+    width: 116%;
+  }
+
+  .rector-main {
+    bottom: -5%;
+    width: 116%;
+  }
+}
+
+@media (max-width: 1024px) and (max-height: 600px) {
+  .emblems {
+    height: 64px;
+  }
+
+  .building1 {
+    bottom: 8%;
+    width: 100%;
+  }
+
+  .building2 {
+    bottom: -2%;
+    width: 100%;
+  }
+
+  .cloud {
+    bottom: -2%;
+    width: 88%;
+  }
+
+  .rector-main {
+    bottom: -5%;
+    width: 88%;
+  }
+}
+
+@media (max-width: 956px) and (max-height: 440px) and (orientation: landscape) {
+  .emblems {
+    height: 44px;
+  }
+
+  .building1 {
+    bottom: -12%;
+    width: 100%;
+  }
+
+  .building2 {
+    bottom: -22%;
+    width: 100%;
+  }
+
+  .cloud {
+    bottom: -2%;
+    width: 65%;
+  }
+
+  .rector-main {
+    bottom: -5%;
+    width: 65%;
+  }
+}
+
+@media (max-width: 932px) and (max-height: 430px) {
+  .emblems {
+    height: 44px;
+  }
+
+  .building1 {
+    bottom: -12%;
+    width: 100%;
+  }
+
+  .building2 {
+    bottom: -22%;
+    width: 100%;
+  }
+
+  .cloud {
+    bottom: -2%;
+    width: 65%;
+  }
+
+  .rector-main {
+    bottom: -5%;
+    width: 65%;
+  }
+}
+
+@media (max-width: 912px) and (max-height: 1368px) and (orientation: portrait) {
+  .emblems {
+    height: 56px;
+  }
+
+  .building1 {
+    bottom: 10%;
+    width: 230%;
+  }
+
+  .building2 {
+    bottom: 0%;
+    width: 230%;
+  }
+
+  .cloud {
+    bottom: -2%;
+    width: 200%;
+  }
+
+  .rector-main {
+    bottom: -5%;
+    width: 200%;
+  }
+}
+
+@media (max-width: 853px) and (max-height: 1280px) and (orientation: portrait) {
+  .emblems {
+    height: 56px;
+  }
+
+  .building1 {
+    bottom: 10%;
+    width: 230%;
+  }
+
+  .building2 {
+    bottom: 0%;
+    width: 230%;
+  }
+
+  .cloud {
+    bottom: -2%;
+    width: 200%;
+  }
+
+  .rector-main {
+    bottom: -5%;
+    width: 200%;
+  }
+}
+
+@media (max-width: 844px) and (max-height: 390px) {
+  .emblems {
+    height: 44px;
+  }
+
+  .building1 {
+    bottom: -14%;
+    width: 100%;
+  }
+
+  .building2 {
+    bottom: -24%;
+    width: 100%;
+  }
+
+  .cloud {
+    bottom: -2%;
+    width: 63%;
+  }
+
+  .rector-main {
+    bottom: -5%;
+    width: 63%;
+  }
+}
+
+@media (max-width: 820px) and (max-height: 1180px) {
+  .emblems {
+    height: 56px;
+  }
+
+  .building1 {
+    bottom: 10%;
+    width: 230%;
+  }
+
+  .building2 {
+    bottom: 0%;
+    width: 230%;
+  }
+
+  .cloud {
+    bottom: -2%;
+    width: 200%;
+  }
+
+  .rector-main {
+    bottom: -5%;
+    width: 200%;
+  }
+}
+
+@media (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+  .emblems {
+    height: 56px;
+  }
+
+  .building1 {
+    bottom: 10%;
+    width: 230%;
+  }
+
+  .building2 {
+    bottom: 0%;
+    width: 230%;
+  }
+
+  .cloud {
+    bottom: -2%;
+    width: 200%;
+  }
+
+  .rector-main {
+    bottom: -5%;
+    width: 200%;
+  }
+}
+
+@media (max-width: 740px) and (max-height: 360px) and (orientation: landscape) {
+  .emblems {
+    height: 44px;
+  }
+
+  .building1 {
+    bottom: -12%;
+    width: 100%;
+  }
+
+  .building2 {
+    bottom: -21%;
+    width: 100%;
+  }
+
+  .cloud {
+    bottom: -2%;
+    width: 65%;
+  }
+
+  .rector-main {
+    bottom: -5%;
+    width: 65%;
+  }
+}
+
+@media (max-width: 720px) and (max-height: 540px) and (orientation: landscape) {
+  .emblems {
+    height: 44px;
+  }
+
+  .building1 {
+    bottom: 10%;
+    width: 123%;
+  }
+
+  .building2 {
+    bottom: 0%;
+    width: 123%;
+  }
+
+  .cloud {
+    bottom: -2%;
+    width: 110%;
+  }
+
+  .rector-main {
+    bottom: -5%;
+    width: 110%;
+  }
+}
+
+@media (max-width: 540px) and (max-height: 720px) and (orientation: portrait) {
+  .emblems {
+    height: 40px;
+  }
+
+  .building1 {
+    bottom: 10%;
+    width: 228%;
+  }
+
+  .building2 {
+    bottom: 0%;
+    width: 228%;
+  }
+
+  .cloud {
+    bottom: -2%;
+    width: 200%;
+  }
+
+  .rector-main {
+    bottom: -5%;
+    width: 200%;
+  }
+}
+
+@media (max-width: 459px) and (max-height: 841px) and (orientation: portrait) {
+  .emblems {
+    height: 40px;
+  }
+
+  .building1 {
+    bottom: 10%;
+    width: 230%;
+  }
+
+  .building2 {
+    bottom: 0%;
+    width: 230%;
+  }
+
+  .cloud {
+    bottom: 20%;
+    width: 200%;
+  }
+
+  .rector-main {
+    bottom: -5%;
+    width: 200%;
+  }
+}
+
+@media (max-width: 440px) and (max-height: 956px) and (orientation: portrait) {
+  .emblems {
+    height: 40px;
+  }
+
+  .building1 {
+    bottom: 10%;
+    width: 230%;
+  }
+
+  .building2 {
+    bottom: 0%;
+    width: 230%;
+  }
+
+  .cloud {
+    bottom: 16%;
+    width: 200%;
+  }
+
+  .rector-main {
+    bottom: -5%;
+    width: 200%;
+  }
+}
+
+@media (max-width: 430px) and (max-height: 932px) and (orientation: portrait) {
+  .emblems {
+    height: 40px;
+  }
+
+  .building1 {
+    bottom: 10%;
+    width: 230%;
+  }
+
+  .building2 {
+    bottom: 0%;
+    width: 230%;
+  }
+
+  .cloud {
+    bottom: 16%;
+    width: 200%;
+  }
+
+  .rector-main {
+    bottom: -5%;
+    width: 200%;
+  }
+}
+
+@media (max-width: 414px) and (max-height: 896px) and (orientation: portrait) {
+  .emblems {
+    height: 40px;
+  }
+
+  .building1 {
+    bottom: 10%;
+    width: 230%;
+  }
+
+  .building2 {
+    bottom: 0%;
+    width: 230%;
+  }
+
+  .cloud {
+    bottom: 17%;
+    width: 200%;
+  }
+
+  .rector-main {
+    bottom: -5%;
+    width: 200%;
+  }
+}
+
+@media (max-width: 393px) and (max-height: 873px) and (orientation: portrait) {
+  .emblems {
+    height: 40px;
+  }
+
+  .building1 {
+    bottom: 10%;
+    width: 230%;
+  }
+
+  .building2 {
+    bottom: 0%;
+    width: 230%;
+  }
+
+  .cloud {
+    bottom: 16%;
+    width: 200%;
+  }
+
+  .rector-main {
+    bottom: -5%;
+    width: 200%;
+  }
+}
+
+@media (max-width: 390px) and (max-height: 844px) and (orientation: portrait) {
+  .emblems {
+    height: 40px;
+  }
+
+  .building1 {
+    bottom: 10%;
+    width: 230%;
+  }
+
+  .building2 {
+    bottom: 0%;
+    width: 230%;
+  }
+
+  .cloud {
+    bottom: 18%;
+    width: 200%;
+  }
+
+  .rector-main {
+    bottom: -5%;
+    width: 200%;
+  }
+}
+
+@media (max-width: 375px) and (max-height: 667px) and (orientation: portrait) {
+  .emblems {
+    height: 36px;
+  }
+
+  .building1 {
+    bottom: 10%;
+    width: 230%;
+  }
+
+  .building2 {
+    bottom: 0%;
+    width: 230%;
+  }
+
+  .cloud {
+    bottom: 24%;
+    width: 200%;
+  }
+
+  .rector-main {
+    bottom: -5%;
+    width: 200%;
+  }
+}
+
+@media (max-width: 360px) and (max-height: 740px) and (orientation: portrait) {
+  .emblems {
+    height: 36px;
+  }
+
+  .building1 {
+    bottom: 10%;
+    width: 230%;
+  }
+
+  .building2 {
+    bottom: 0%;
+    width: 230%;
+  }
+
+  .cloud {
+    bottom: 20%;
+    width: 200%;
+  }
+
+  .rector-main {
+    bottom: -5%;
+    width: 200%;
+  }
+}
+
+@media (max-width: 344px) and (max-height: 882px) and (orientation: portrait) {
+  .emblems {
+    height: 36px;
+  }
+
+  .building1 {
+    bottom: 10%;
+    width: 230%;
+  }
+
+  .building2 {
+    bottom: 0%;
+    width: 230%;
+  }
+
+  .cloud {
+    bottom: 0%;
+    width: 200%;
+  }
+
+  .rector-main {
+    bottom: -5%;
+    width: 200%;
+  }
+}
+
